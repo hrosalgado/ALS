@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo</title>
+</head>
+<body>
+	<form method="POST" action="/save">
+		<h2>Datos empresa</h2>
+		<input type="text" name="cif" value="" placeholder="cif"><br>
+		<input type="text" name="nameCompany" value="" placeholder="nombre">
+
+		<h2>Datos cliente</h2>
+		<input type="text" name="dni" value="" placeholder="dni"><br>
+		<input type="text" name="nameClient" value="" placeholder="nombre"><br>
+
+		<h3>Línea de factura</h3>
+		<div id="lines"></div>
+		<input type="button" value="add" onclick="return add()"><br><br>
+
+		<input type="hidden" name="clicks" id="clicks" value="0">
+		<input type="submit" name="ok" value="OK">
+	</form>
+
+	<script type="text/javascript">
+		clicks = 0;
+
+		function add(){
+			document.getElementById('lines').innerHTML += "<input type'text' name='" + clicks + "' placeholder='Datos línea' /><br>";
+			document.getElementById('clicks').value++;
+			clicks++;
+		}
+	</script>
+</body>
+</html>

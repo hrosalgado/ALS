@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<form method="post" action="/tip">
+		<div style="float: left;">
+			<h1>Datos del emisor</h1>
+			<label>CIF</label>
+			<input type="text" name="cif1" value="" /><br>
+			<label>Nombre</label>
+			<input type="text" name="name1" value="" /><br>
+			<label>Dirección</label>
+			<input type="text" name="address1" value="" /><br>
+			<label>Población</label>
+			<input type="text" name="city1" value="" /><br>
+			<label>Provincia</label>
+			<input type="text" name="province1" value="" /><br>
+			<label>Código postal</label>
+			<input type="text" name="cp1" value="" /><br>
+			<label>País</label>
+			<input type="text" name="country1" value="" /><br>
+			<label>Persona de contact</label>
+			<input type="text" name="contactPerson1" value="" /><br>
+			<label>Email</label>
+			<input type="text" name="mail1" value="" /><br>
+			<label>Teléfono</label>
+			<input type="text" name="phone1" value="" /><br>
+		</div>
+
+		<div style="float: right;">
+			<h1>Datos del cliente</h1>
+			<label>CIF</label>
+			<input type="text" name="cif2" /><br>
+			<label>Nombre</label>
+			<input type="text" name="name2" /><br>
+			<label>Dirección</label>
+			<input type="text" name="address2" /><br>
+			<label>Población</label>
+			<input type="text" name="city2" /><br>
+			<label>Provincia</label>
+			<input type="text" name="province2" /><br>
+			<label>Código postal</label>
+			<input type="text" name="cp2" /><br>
+			<label>País</label>
+			<input type="text" name="country2" /><br>
+			<label>Persona de contact</label>
+			<input type="text" name="contactPerson2" /><br>
+			<label>Email</label>
+			<input type="text" name="mail2" /><br>
+			<label>Teléfono</label>
+			<input type="text" name="phone2" /><br><br>	
+		</div>
+
+		<div style="clear: both;">
+			<h2>Línea de detalle</h2>
+			<label>Concepto</label>
+			<input type="text" name="concept" />
+			<label>Precio por unidad</label>
+			<input type="text" name="pricePerUnit" />
+			<label>Unidades</label>
+			<input type="text" name="units" />
+			<label>Importe bruto</label>
+			<input type="text" name="firstCost" />
+			<label>IVA</label>
+			<input type="text" name="iva" />
+			<label>Importe total</label>
+			<input type="text" name="lastCost" />
+		</div>
+
+		<input type="submit" name="btn" value="OK">
+	</form>
+</body>
+</html>

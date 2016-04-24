@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+	</head>
+
+	<body>
+		{% for t in tip %}
+		<div>
+			<p>CIF: {{t.cif}}</p>
+			<p>Compañía: {{t.nameCompany}}</p>
+			<p>DNI: {{t.dni}}</p>
+			<p>nameClient: {{t.nameClient}}</p>
+			<ul>
+				{% for line in t.lines %}
+				<li>{{line}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% endfor %}
+	</body>
+</html>

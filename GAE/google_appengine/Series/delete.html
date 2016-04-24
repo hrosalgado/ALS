@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="template.css">
+	<title>SeriesWatchMan</title>
+</head>
+<body>
+<div id="dvHeader">
+	<p>
+	<table width="100%">
+		<tr>
+			<td width="80%"><b>Logout</b> <a href="{{access_link}}">{{user_name}}</a></td>
+			<td width="20%">SeriesWatchMan</td>
+		</tr>
+	</table>
+	</p>
+</div>
+<div id="dvTitle">
+<p>Borrar serie</p>
+</div>
+<div id="dvSeries">
+<form id="tblSeries" action="/delete?id={{serie.key.urlsafe()}}" method="post">
+	<p align="right"><img src="{{serie.picture}}"/></p>
+	<p>
+	<big><b>{{serie.name}}</b></big> <i>({{serie.added}})</i>
+		<br><big>{{serie.lastEpisode // 1000}}x{{serie.lastEpisode % 1000}}</big>
+	<br><a target="_blank" href="{{serie.web}}">Web</a>
+	<br>{{serie.comments}}
+	</p>
+	<input type="image"
+	 	width="16px" height="16px"
+		class="styled-button" src="/res/delete.svg"
+	 	title="delete" alt="delete"
+		onSubmit="javascript: document.tblSeries.submit()"
+		/>
+</form>
+</div>
+<div id="dvActions">
+		<a href="/main"><img width="24px" height="24px" title="back" class="styled-button" src="/res/back.svg"/></a>
+</div>
+</body>
+</html>
