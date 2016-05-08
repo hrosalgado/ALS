@@ -1,0 +1,32 @@
+----Funcionalidades
+-Gastos
+	-Alta ticket	OK
+	-Baja ticket	OK
+	-Consultar ticket	OK
+	-Modificar ticket	OK
+	-Lista de gastos 	OK
+
+-Lista de la compra
+	-Alta	OK
+	-Baja	OK
+	-Modificación	OK
+	-Consulta 	OK
+	-Listas de la compra	OK
+
+-Tareas a realizar
+	-Alta	OK
+	-Baja 	OK
+	-Modificación	OK
+	-Consulta 	OK
+	-Listado de tareas 	OK
+
+-Horario
+	-Añadir tarea 	OK
+	-Consultar tarea 	OK
+	-Modificar tarea 	OK
+	-Eliminar tarea 	OK
+	-Consultar horario 	OK
+
+-Home 	OK
+
+-Registro de usuarios	OK
